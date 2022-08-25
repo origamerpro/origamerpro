@@ -1,0 +1,446 @@
+{
+	"info": {
+		"_postman_id": "8e71058e-bf47-46cc-8d0d-bb1ac25d40d9",
+		"name": "HomeWork1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14884840"
+	},
+	"item": [
+		{
+			"name": "01",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/challenger",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"challenger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "02",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/challenges",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"challenges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "03",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/gzip",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "04",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "b945ee4c-ffc5-430f-a24d-471ecaee188b",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					},
+					{
+						"key": "X-Auth-Token",
+						"value": "b945ee4c-ffc5-430f-a24d-471ecaee188b",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"note\": \"my note\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/secret/note",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"secret",
+						"note"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "05",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos/62",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"62"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "07",
+			"request": {
+				"method": "HEAD",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "08",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"done 09\",\r\n    \"doneStatus\": true,\r\n    \"description\": \"done\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "09",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos?doneStatus=true",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					],
+					"query": [
+						{
+							"key": "doneStatus",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"work 033\",\r\n    \"doneStatus\": true,\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/secret/token",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"secret",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"work 033\",\r\n    \"doneStatus\": mark,\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/heartbeat",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"heartbeat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "13",
+			"request": {
+				"method": "OPTIONS",
+				"header": [
+					{
+						"key": "X-Challenger",
+						"value": "9c5d635c-c36c-4453-80b4-89466aca8d3c",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"work 033\",\r\n    \"doneStatus\": mark,\r\n    \"description\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apichallenges.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"apichallenges",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
